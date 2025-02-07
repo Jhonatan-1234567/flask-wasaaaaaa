@@ -10,11 +10,11 @@ def home():
 
 @app.route("/contacto") 
 def contacto():
- return "contacto"
+ return render_template("contacto.html")
 
 @app.route("/acerca-de") 
 def acerca_de():
- return "acerca-de"
+ return render_template("acerca_de.html")
 
 if __name__ == "__main__":
    app.run(debug=True)
